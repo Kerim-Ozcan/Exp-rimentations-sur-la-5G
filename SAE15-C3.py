@@ -9,7 +9,7 @@ This is a temporary script file.
 import pandas as pd
 import matplotlib.pyplot as plt
 import webview
-import seaborn as sns
+import seaborn as sb
 import folium
 import chardet
 from folium.plugins import MarkerCluster
@@ -22,7 +22,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 # Config de l'affichage
 plt.style.use('seaborn-v0_8')
-sns.set_palette("husl")
+sb.set_palette("husl")
 
 class Application5G(tk.Tk):
     def __init__(self):
@@ -254,4 +254,5 @@ def create_complete_charts(pf):
     
 if __name__ == "__main__":
     app = Application5G()
+
     app.mainloop()
